@@ -15,9 +15,9 @@ var enter = function() {
   $splashPage.fadeOut();
   $detailPage.show();
 }
+setTimeout(function(){ enter(); }, 1000);
 
 $('#ical-link').click(function() {
-  console.log(this);
   copy(this);
 })
 //javascript copy function
